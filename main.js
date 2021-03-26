@@ -1,6 +1,17 @@
-var lista = ["maçã", "pêra", "laranja"];
-lista.push("uva");
-console.log(lista);
+/* Dicionário: são estruturas caracterizadas
+por atributos de 'chave e valor'. Se assemelham ao formato .json */
+
+var frutas = [{nome:"maçã", cor:"vermelha"}, {nome:"uva", cor:"roxa"}];
+console.log(frutas);
+alert(frutas[1].nome);
+
+
+//var lista = ["maçã", "pêra", "laranja"];
+//lista.push("uva");
+//lista.pop();
+//lista.pop();
+//console.log(lista.toString());
+//console.log(lista.join(" - "));
 
 //var nome = "Bartô Alheiros";
 //var n1 = 5;
