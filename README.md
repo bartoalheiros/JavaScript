@@ -1,1 +1,1 @@
-Repositório criado para dar apoio no curso de JavaScript da Digital Inovation One.
+Alguns códigos de estudos em JavaScript.
