@@ -69,6 +69,7 @@ books = [];
 
 const library = new Library(books);
 //listar
+console.log("Lista vazia.");
 console.log(library.getBooks());
 
 //criar novo livro
@@ -83,26 +84,46 @@ const capitaes_de_ar = new Book('Mulheres de Areia','As reviravoltas nos caminho
 //adicionar novo livro
 library.addBook(capitaes_de_ar);
 
+console.log("Resultado após adição de 2 livros.");
+
 console.log(library.getBooks());
 
 //criar outro livro
 const hora_da_estrela = new Book('A Hora da Estrela','A Hora da Estrela é um romance literário da escritora brasileira Clarice Lispector. O romance narra a história da datilógrafa alagoana, Macabéa, que migra para o Rio de Janeiro, tendo sua rotina narrada por um escritor fictício chamado Rodrigo S.M.','Clarice Lispector');
 //adicionar novo livro
-library.addBook(capitaes_de_ar);
+library.addBook(hora_da_estrela);
+
+console.log("Resultado após adição de 3 livros.");
+
+console.log(library.getBooks());
 
 //remover livro
 library.removeBookById('1');
+
+
+console.log("Resultado após remoção de 1 livro.");
+
 console.log(library.getBooks());
 
-// //localizar livro pelo 'id'
-// console.log(library.getBookById('1'));
+//localizar livro pelo 'id'
+console.log("Localizando livro pelo id '1'");
+
+console.log(library.getBookById(1));
+
+//localizar livro pelo 'id'
+console.log("Localizando livro pelo id '2'");
+
+console.log(library.getBookById(2));
 
 // //editar um livro
 
-// //1 editando título
-// const bookUpTitle = new Book('2','Capitães de Areia');
-// console.log(library.updateBookById('2', bookUpTitle));
-// console.log(library.getBooks());
+//1 editando título
+const bookUpTitle = new Book('Capitães de Areia');
+
+
+console.log("Resultado após atualização de título do livro.");
+
+console.log(library.updateBookById(2, bookUpTitle));
 
 // //2 editando descrição
 // const bookUpDesc = new Book('2', undefined, 'Capitães da Areia é um romance de autoria do escritor brasileiro Jorge Amado, escrito em 1937. A obra retrata a vida de um grupo de menores abandonados, que crescem nas ruas da cidade de Salvador, Bahia, vivendo em um trapiche, roubando para sobreviver, chamados de "Capitães da Areia".');
