@@ -13,7 +13,7 @@ class Library {
     }
 
     addBook(book) {
-        book.id = this.books.length + 1;
+        book.id = (this.books.length + 1).toString();
         this.books.push(book);
         return book;
     }
@@ -101,19 +101,19 @@ console.log(library.getBooks());
 library.removeBookById('1');
 
 
-console.log("Resultado após remoção de 1 livro.");
+console.log("Resultado após remoção de 1 livro com id '1'");
 
 console.log(library.getBooks());
 
 //localizar livro pelo 'id'
 console.log("Localizando livro pelo id '1'");
 
-console.log(library.getBookById(1));
+console.log(library.getBookById('1'));
 
 //localizar livro pelo 'id'
 console.log("Localizando livro pelo id '2'");
 
-console.log(library.getBookById(2));
+console.log(library.getBookById('2'));
 
 // //editar um livro
 
@@ -123,9 +123,9 @@ const bookUpTitle = new Book('Capitães de Areia');
 
 console.log("Resultado após atualização de título do livro.");
 
-console.log(library.updateBookById(2, bookUpTitle));
+console.log(library.updateBookById('2', bookUpTitle));
 
-// //2 editando descrição
+//2 editando descrição
 // const bookUpDesc = new Book('2', undefined, 'Capitães da Areia é um romance de autoria do escritor brasileiro Jorge Amado, escrito em 1937. A obra retrata a vida de um grupo de menores abandonados, que crescem nas ruas da cidade de Salvador, Bahia, vivendo em um trapiche, roubando para sobreviver, chamados de "Capitães da Areia".');
 // console.log(library.updateBookById('2', bookUpDesc));
 // console.log(library.getBooks());
