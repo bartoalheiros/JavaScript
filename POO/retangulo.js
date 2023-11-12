@@ -1,4 +1,5 @@
 class Retangulo {
+
     constructor(altura, largura) {
       this.altura = altura;
       this.largura = largura;
@@ -11,6 +12,7 @@ class Retangulo {
     calculaArea() {
       return this.altura * this.largura;
     }
+    
   }
   
   const quadrado = new Retangulo(10, 10);
