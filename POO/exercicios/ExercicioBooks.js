@@ -8,8 +8,8 @@ class Book {
 
 class Library {
     
-    constructor(books) {
-        this.books = books;
+    constructor() {
+        this.books = [];
     }
 
     addBook(book) {
@@ -65,9 +65,7 @@ class Library {
 
 }
 
-books = [];
-
-const library = new Library(books);
+const library = new Library();
 
 //adicionar livros
 const senhor_dos_aneis_1 = new Book('O senhor dos anéis - a sociedade do anel','O "Um Anel" é o elemento central da saga. No anel, em inscrições no alfabeto Tengwar com versos na língua proibida de Mordor, pode-se ler: "Um Anel que a todos rege, Um Anel para achá-los, Um Anel que a todos traz, para na escuridão atá-los". Palavras em contínuo tanto na parte de dentro do anel, como na parte externa do anel. Isso se apresenta no início do livro, na apresentação da trilogia, no original em primeira edição em Inglês. Na saga, os vilões se autodestroem pelo próprio porte do anel.','R.R.Tolkien');
